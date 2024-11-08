@@ -12,14 +12,14 @@
     <div class="header">
         <div class="container">
             <nav>
-                <p class="logo" title="kimingiTech"><span>k</span>imingi<span>T</span>ech</p>
+                <p class="logo" title="kimingiTech"><span>K</span>imingi<span>T</span>ech</p>
                 <ul id="menu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portifolio">Portifolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portifolio" onclick="closemenu()">Portifolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                   <!--<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>-->
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()" title="Menu"></i>
             </nav>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Full Name:Peter Kimingi. <br>location:Kenya. <br>Occupation:Computer scientist. <br>My services are included at the skills tab below.</p>
+                    <p>Full Name:Peter Kimingi. <br>location:Kenya. <br>Occupation:Computer scientist. <br>My services are included in the skills tab below.</p>
 
                          <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -80,23 +80,20 @@
             <h1 class="sub-titles">My Services</h1>
             <div class="services-list">
                 <div>
-                    <h2>Graphical-design</h2>
-                    <p>Logos ,Postas,cards for different sizes,designs,color blends ,of your choice.Call below and get yours done.</p>
-                        <a href="#">Learn more</a>
-                </div>
-
-                <div>
-                    <h2>App design</h2>
-                    <p>Get an app today .You want to make your works digital holla at me</p>
-                        <a href="#">Learn more</a>
-                </div>
-
-                <div>
                     <h2>web-design</h2>
-                    <p>I develop web browser with latest designs ,colors of your choice 
+                    <p>I develop websites with latest designs ,colors of your choice 
                         ,a platform to advertise your business,connect with family and friends.
                         If interested contact me for more information</p>
-                    <a href="#">Learn more</a>
+                </div>
+                   
+                <div>
+                    <h2>Graphical-design</h2>
+                   <p>Logos ,Postas,cards for different sizes,designs,color blends ,of your choice.Call below and get yours done.</p>
+                </div>
+
+                <div>
+                        <h2>App design</h2>
+                        <p>Get an app today .You want to make your works digital holla at me</p>
                 </div>
             </div>
         </div>
@@ -110,16 +107,14 @@
                     <img src="pp.images/portifolio-2.png">
                     <div class="layer">
                         <h3>Website</h3>
-                        <p>web browser smart,reliable and modern get one?</p>
-                        <a href="#">View</a>
+                        <p>Get yourself a smart,modern,well designed website for your personal use,individual business or an enterprise.</p>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="pp.images/portifolio-1.jpg">
+                    <img src="pp.images/poster1-01.png">
                     <div class="layer">
                         <h3>Graphics Designs</h3>
-                        <p>Beautifull arts and logos,posters and certificate of different groups and company</p>
-                        <a href="#">View</a>
+                        <p>Beautiful arts and logos,posters and certificate of different groups and company</p>
                     </div>
                 </div>
                 <div class="work">
@@ -127,11 +122,54 @@
                     <div class="layer">
                         <h3>Apps</h3>
                         <p>The App connects you to the talented people around the world.Download it from play store</p>
-                        <a href="#">View</a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a  class="btn " onclick="opendiv()">See More</a>
+        </div>
+    </div>
+<!-------------------seemore------------------>
+    <div class="see-more" id="see-more">
+        <h2 class="moretab-title">More About Me</h2>
+        <div class="more-tabs">
+            <p class="viewtabs activetab" onclick="openviewtab('Websites')">Websites</p>
+            <p class="viewtabs" onclick="openviewtab('Designs')">Designs</p>
+            <p class="viewtabs" onclick="openviewtab('Apps')">Apps</p>
+        </div>
+
+        <div class="viewcontents active-view" id="Websites">
+            <h2>Here are some of the Websites  i have created</h2>
+            <ul>
+                <li><a href="https://kimingi318.github.io/kimingiTech/"> KimingiTech website</a></li>
+                <li><a href="#"> Perksparlour website</a></li>
+                <li><a href="#">Insidechuka website</a> </li>
+            </ul>
+        </div>
+        <div class="viewcontents " id="Designs">
+            <h2>Here are more designs</h2>
+            <h4>Individual logos</h4>
+            <div class="designs">
+                <div class="individual-logos">
+                    <p>Kimingi-Tech logo</p>
+                    <img class="design" src="pp.images/kimingi-tech.png" alt="kimingitech logo">
+                    <p>Perks-parlour logo</p>
+                    <img class="design" src="pp.images/perks-logo-01.png" alt="Beautyshop logo">
+                </div>
+                <div class="group-logo">
+                    <p>Nerds-Minds logo</p>
+                    <img class="design" src="pp.images/portifolio-1.jpg" alt="group logos">
+                </div>
+                <div class="Posters">
+                    <p>My poster</p>
+                    <img class="design" src="pp.images/poster1-01.png" alt="My advert poster">
+                    <p>Beauty-poster</p>
+                    <img src="pp.images/PERKS.png" class="design" alt="beauty-poster">
+                </div>
+            </div>
+        </div>
+        <div class="viewcontents" id="Apps">
+            <h2>Apps</h2>
+            <p>No apps at the moment</p>
         </div>
     </div>
 <!------------------Contact------------------->
@@ -141,7 +179,7 @@
             <div class="content-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <a href="mailto:kimingipeter318@gmail.com"><p> <i class="fa-solid fa-paper-plane"></i>Email @kimingipeter318@gmail.com</p></a>
-                <a href="tel:+254705168033"><p> <i class="fa-solid fa-phone"></i>Call Me ;0705168033</p></a>
+                <a href="tel:+254705168033"><p> <i class="fa-solid fa-phone"></i>Call Me: 0705168033</p></a>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/kimingi318?ighs=aTRsMTAwNGhobDhu" title="Instagram" ><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/peter-kimingi-348608305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
@@ -176,6 +214,12 @@
 
     </script>
     <script>
+        var seemore = document.getElementById("see-more");
+        function opendiv() {
+            seemore.style.display = 'block';
+        }
+    </script>
+    <script>
 
 
         var sidemenu = document.getElementById("menu");
@@ -186,6 +230,23 @@
          function closemenu(){
             sidemenu.style.right = '-200px' ;
          }
+
+    </script>
+    <script>
+
+        var view_tabs = document.getElementsByClassName("viewtabs");
+        var view_contents = document.getElementsByClassName("viewcontents");
+         
+        function openviewtab(viewname) {
+            for(view_tab of view_tabs){
+                view_tab.classList.remove("activetab");
+            }
+            for(view_content of view_contents){
+                view_content.classList.remove("active-view");
+            }
+            event.currentTarget.classList.add("activetab");
+            document.getElementById(viewname).classList.add("active-view");
+        }
 
     </script>
 </body>

@@ -72,7 +72,7 @@ nav span{
 .header-text h1 span{
     color: #ff004f;
 }
-/*about*/
+/******************about**************/
 .about{
     padding: 80px 0;
     color:#ababab ;
@@ -241,9 +241,77 @@ nav span{
     text-decoration: none;
     color: #ffff;
     transition:  backgroung 0.5s;
+    cursor: pointer;
 }
 .btn:hover{
     background: #ff004f;
+}
+/****************see more**************/
+.see-more{
+    padding: 50px 0;
+    display: none;
+    width: 80%;
+    margin-left: 10%;
+}
+.moretab-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.more-tabs{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.viewtabs{
+    margin-right:50px ;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.viewtabs::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.viewtabs.activetab::after{
+    width: 100%;
+}
+.design{
+    width: 100%;
+    border-radius: 15px;
+}
+.designs{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+}
+#Websites ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#Websites ul li{
+    list-style: square ;
+    margin-left: 20px;
+}
+.viewcontents h2{
+    color: #b54769;
+}
+.viewcontents p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.viewcontents{
+    display: none;
+}
+.viewcontents.active-view{
+    display: block;
 }
 /****************Contact**************/
 .content-left p{
@@ -347,5 +415,18 @@ nav .fa-solid{
     .about-col-1{
         margin-bottom: 30px;
     }
+    .see-more{
+        margin: 10px 10%;
+    }
+    .see-more .moretab-title{
+        font-size: 30px;
+    }
+    .designs{
+        display: block;
+    }
+    .viewtabs{
+        font-size: 20px;
+    }
+
 
 }
